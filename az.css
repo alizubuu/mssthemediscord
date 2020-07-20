@@ -3857,7 +3857,6 @@ code {
 
 .isMentioned-N-h9aa .markup-2BOw-j .mention {
 	padding: 0;
-	background: transparent !important;
 	color: var(--main-color);
 	transition: all .1s ease-in-out
 }
@@ -11396,12 +11395,12 @@ textarea::-webkit-scrollbar {
 }
 
 .mentioned-xhSam7 {
-	background-color: rgba(255, 255, 255, 0.05)
+	background-color: rgba(251, 255, 161)
 }
 
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z,
 .mouse-mode.full-motion .mentioned-xhSam7:hover {
-	background-color: rgba(255, 255, 255, 0.08)
+	background-color: rgba(251, 255, 161)
 }
 
 .theme-dark .mentioned-xhSam7 .mention.interactive:hover {
