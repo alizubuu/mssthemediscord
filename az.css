@@ -1581,7 +1581,7 @@ textarea,
 	left: 0;
 	background: var(--main-color);
 	border-radius: 3px;
-	opacity: .6;
+	opacity: .2;
 	z-index: -1;
 	transition: all .15s ease-in-out
 }
