@@ -1569,6 +1569,7 @@ textarea,
 .unread-1xRYoj,
 .mention-1f5kbO {
 	position: relative;
+	background: var(--main-color);
 }
 
 .unread-1xRYoj:after,
@@ -1581,7 +1582,7 @@ textarea,
 	left: 0;
 	background: var(--main-color);
 	border-radius: 3px;
-	opacity: .2;
+	opacity: .5;
 	z-index: -1;
 	transition: all .15s ease-in-out
 }
