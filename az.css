@@ -1569,7 +1569,7 @@ textarea,
 .unread-1xRYoj,
 .mention-1f5kbO {
 	position: relative;
-	background: var(--main-color);
+	background: transparent
 }
 
 .unread-1xRYoj:after,
@@ -1582,7 +1582,7 @@ textarea,
 	left: 0;
 	background: var(--main-color);
 	border-radius: 3px;
-	opacity: 1;
+	opacity: .9;
 	z-index: -1;
 	transition: all .15s ease-in-out
 }
@@ -2439,11 +2439,11 @@ textarea,
 }
 
 .container-1YxwTf .isMentioned-N-h9aa {
-	background: rgba(251, 255, 161)
+	background: rgba(255, 255, 255, 0.1)
 }
 
 .container-1YxwTf .isMentioned-N-h9aa:after {
-	background: rgba(251, 255, 161);
+	background: rgba(255, 255, 255, 0.1);
 	border-left: 4px solid var(--main-color);
 	border-radius: 2px 0 0 2px
 }
@@ -3857,6 +3857,7 @@ code {
 
 .isMentioned-N-h9aa .markup-2BOw-j .mention {
 	padding: 0;
+	background: transparent !important;
 	color: var(--main-color);
 	transition: all .1s ease-in-out
 }
@@ -11395,12 +11396,12 @@ textarea::-webkit-scrollbar {
 }
 
 .mentioned-xhSam7 {
-	background-color: rgba(251, 255, 161)
+	background-color: rgba(255, 255, 255, 0.05)
 }
 
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z,
 .mouse-mode.full-motion .mentioned-xhSam7:hover {
-	background-color: rgba(251, 255, 161)
+	background-color: rgba(255, 255, 255, 0.08)
 }
 
 .theme-dark .mentioned-xhSam7 .mention.interactive:hover {
