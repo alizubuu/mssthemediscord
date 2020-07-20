@@ -2439,11 +2439,11 @@ textarea,
 }
 
 .container-1YxwTf .isMentioned-N-h9aa {
-	background: rgba(255, 255, 255, 0.1)
+	background: rgba(251, 255, 161)
 }
 
 .container-1YxwTf .isMentioned-N-h9aa:after {
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(251, 255, 161);
 	border-left: 4px solid var(--main-color);
 	border-radius: 2px 0 0 2px
 }
