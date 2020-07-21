@@ -212,7 +212,7 @@ textarea,
 }
 
 .typeWindows-1za-n7>.wordmark-2iDDfm:after {
-	content: "v6.0.0";
+	content: " Theme Made with ♥ by Tyrion Lannister#7099.";
 	color: rgba(255, 255, 255, 0.3);
 	font-family: var(--code-font);
 	font-size: 10px
@@ -1450,7 +1450,7 @@ textarea,
 }
 
 .container-3baos1:after {
-	content: "v6.0.0";
+	content: " Theme Made with ♥ by Tyrion Lannister#7099.";
 	left: 50%;
 	text-align: left;
 	opacity: 0;
@@ -11396,9 +11396,14 @@ textarea::-webkit-scrollbar {
 }
 
 .mentioned-xhSam7 {
-	background-color: rgba(255, 255, 255, 0.05)
+    text-shadow: 1px 1px 1px #000;
+	background:
+    linear-gradient(-100deg, 
+      rgba(64, 255, 163,0.10),
+      rgba(64, 255, 163,0.6) 100%, 
+      rgba(64, 255, 163,0.25)
+    );
 }
-
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z,
 .mouse-mode.full-motion .mentioned-xhSam7:hover {
 	background-color: rgba(255, 255, 255, 0.08)
