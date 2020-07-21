@@ -11396,14 +11396,15 @@ textarea::-webkit-scrollbar {
 }
 
 .mentioned-xhSam7 {
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #363636;
 	background:
     linear-gradient(-100deg, 
       rgba(64, 255, 163,0.10),
-      rgba(64, 255, 163,0.6) 100%, 
-      rgba(64, 255, 163,0.25)
+      rgba(64, 255, 163,0.4) 100%, 
+      rgba(64, 255, 163,0.20)
     );
 }
+
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z,
 .mouse-mode.full-motion .mentioned-xhSam7:hover {
 	background-color: rgba(255, 255, 255, 0.08)
