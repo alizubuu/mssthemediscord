@@ -1569,7 +1569,7 @@ textarea,
 .unread-1xRYoj,
 .mention-1f5kbO {
 	position: relative;
-	background: transparent
+	background: var(--main-color);
 }
 
 .unread-1xRYoj:after,
@@ -2439,11 +2439,11 @@ textarea,
 }
 
 .container-1YxwTf .isMentioned-N-h9aa {
-	background: rgba(255, 255, 255, 0.1)
+	background: var(--main-color);
 }
 
 .container-1YxwTf .isMentioned-N-h9aa:after {
-	background: rgba(255, 255, 255, 0.1);
+	background: var(--main-color);
 	border-left: 4px solid var(--main-color);
 	border-radius: 2px 0 0 2px
 }
@@ -3857,7 +3857,7 @@ code {
 
 .isMentioned-N-h9aa .markup-2BOw-j .mention {
 	padding: 0;
-	background: transparent !important;
+	background: var(--main-color) !important;
 	color: var(--main-color);
 	transition: all .1s ease-in-out
 }
