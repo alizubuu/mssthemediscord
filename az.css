@@ -1,13 +1,88 @@
 /**
-* @name mssthemediscord
+* @name MSSv2
 * @author Tyrion Lannister#7099
 * @version 1.2
 * @description An easily customizable and automatically updating theme
-* @source https://github.com/alizubuu/mssthemediscord
+* @Source https://github.com/alizubuu/mssthemediscord
 */
 
-/* SETTINGS */
+/* IMPORT CSS */
 
+:root {
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
+	--success-color: #43b581;
+	--danger-color: #982929;
+	--channel-unread: var(--main-color);
+	--channel-color: rgba(255, 255, 255, 0.3);
+	--muted-color: rgba(255, 255, 255, 0.1);
+	--url-color: var(--main-color);
+	--online-color: #43b581;
+	--idle-color: #faa61a;
+	--dnd-color: #982929;
+	--offline-color: #808080;
+	--streaming-color: #593695;
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+	--server-columns: 1;
+	--channels-width: 220px;
+	--members-width: 240px;
+	--avatar-roundness: 50%;
+	--background-shading: 100%;
+	--background-overlay: rgba(0, 0, 0, .6);
+	--background-image: url(https://i.imgur.com/XlBe3pI.jpg);
+	--background-position: center;
+	--background-size: cover;
+	--background-repeat: no-repeat;
+	--background-attachment: fixed;
+	--background-brightness: 100%;
+	--background-contrast: 100%;
+	--background-saturation: 100%;
+	--background-invert: 0%;
+	--background-grayscale: 0%;
+	--background-sepia: 0%;
+	--background-blur: 0px;
+	--backdrop-overlay: rgba(0, 0, 0, .8);
+	--backdrop-image: var(--background-image);
+	--backdrop-position: var(--background-position);
+	--backdrop-size: var(--background-size);
+	--backdrop-repeat: var(--background-repeat);
+	--backdrop-attachment: var(--background-attachment);
+	--backdrop-brightness: var(--background-brightness);
+	--backdrop-contrast: var(--background-contrast);
+	--backdrop-saturation: var(--background-saturation);
+	--backdrop-invert: var(--background-invert);
+	--backdrop-grayscale: var(--background-grayscale);
+	--backdrop-sepia: var(--background-sepia);
+	--backdrop-blur: var(--background-blur);
+	--user-popout-image: var(--background-image);
+	--user-popout-position: var(--background-position);
+	--user-popout-size: var(--background-size);
+	--user-popout-repeat: var(--background-repeat);
+	--user-popout-attachment: var(--background-attachment);
+	--user-popout-brightness: var(--background-brightness);
+	--user-popout-contrast: var(--background-contrast);
+	--user-popout-saturation: var(--background-saturation);
+	--user-popout-invert: var(--background-invert);
+	--user-popout-grayscale: var(--background-grayscale);
+	--user-popout-sepia: var(--background-sepia);
+	--user-popout-blur: calc(var(--background-blur) + 3px);
+	--user-modal-image: var(--background-image);
+	--user-modal-position: var(--background-position);
+	--user-modal-size: var(--background-size);
+	--user-modal-repeat: var(--background-repeat);
+	--user-modal-attachment: var(--background-attachment);
+	--user-modal-brightness: var(--background-brightness);
+	--user-modal-contrast: var(--background-contrast);
+	--user-modal-saturation: var(--background-saturation);
+	--user-modal-invert: var(--background-invert);
+	--user-modal-grayscale: var(--background-grayscale);
+	--user-modal-sepia: var(--background-sepia);
+	--user-modal-blur: calc(var(--background-blur) + 3px);
+	--home-icon: url(https://i.imgur.com/HmAdMZk.png);
+	--home-position: center;
+	--home-size: 40px
+}
 
 .appMount-3lHmkl {
 	background: var(--background-overlay)
@@ -205,6 +280,7 @@ textarea,
 	order: 1
 }
 
+
 .typeWindows-1za-n7>.wordmark-2iDDfm:before {
 	content: "Marbo Shala Shuor";
 	color: rgba(255, 255, 255, 0.7);
@@ -213,7 +289,7 @@ textarea,
 }
 
 .typeWindows-1za-n7>.wordmark-2iDDfm:after {
-	content: " Theme Made with ♥ by Tyrion Lannister#7099.";
+	content: "v1.2";
 	color: rgba(255, 255, 255, 0.3);
 	font-family: var(--code-font);
 	font-size: 10px
@@ -275,7 +351,7 @@ textarea,
 }
 
 .typeMacOS-3EmCyP:after {
-	content: "6.0.0";
+	content: "6.0.1";
 	color: rgba(255, 255, 255, 0.3)
 }
 
@@ -1009,6 +1085,17 @@ textarea,
 	opacity: .5
 }
 
+.addButtonIcon-3u-3Hu {
+	color: var(--main-color);
+	opacity: .7;
+	transition: all .3s ease-in-out
+}
+
+.addButtonIcon-3u-3Hu:hover {
+	color: var(--main-color);
+	opacity: 1
+}
+
 .content-3at_AU {
 	transition: all .15s ease-in-out
 }
@@ -1451,7 +1538,7 @@ textarea,
 }
 
 .container-3baos1:after {
-	content: "fb.com/alizubuu";
+	content: "fb.com/alizubu";
 	left: 50%;
 	text-align: left;
 	opacity: 0;
@@ -1570,7 +1657,7 @@ textarea,
 .unread-1xRYoj,
 .mention-1f5kbO {
 	position: relative;
-	background: var(--main-color);
+	background: transparent
 }
 
 .unread-1xRYoj:after,
@@ -1945,12 +2032,12 @@ textarea,
 	color: rgba(255, 255, 255, 0.8)
 }
 
-.newMessagesBar-mujexs {
+.newMessagesBar-265mhP {
 	background: transparent;
 	transition: all .15s ease-in-out
 }
 
-.newMessagesBar-mujexs:before {
+.newMessagesBar-265mhP:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -1964,42 +2051,42 @@ textarea,
 	transition: all .15s ease-in-out
 }
 
-.newMessagesBar-mujexs:hover:before,
-.newMessagesBar-mujexs:active:before {
+.newMessagesBar-265mhP:hover:before,
+.newMessagesBar-265mhP:active:before {
 	opacity: 1
 }
 
-.newMessagesBar-mujexs:active {
+.newMessagesBar-265mhP:active {
 	padding-top: 0;
 	transform: scale(0.99)
 }
 
-.newMessagesBar-mujexs button,
-.newMessagesBar-mujexs button:last-child {
+.newMessagesBar-265mhP button,
+.newMessagesBar-265mhP button:last-child {
 	color: #fff
 }
 
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM {
-	margin-bottom: 5px;
+.jumpToPresentBar-G1R9s6 {
 	background: rgba(0, 0, 0, 0.7);
 	border-radius: 3px;
-	transition: all .15s ease-in-out
+	transition: all .15s ease-in-out;
+	padding-bottom: 0px
 }
 
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM>button {
+.jumpToPresentBar-G1R9s6>button {
 	color: rgba(255, 255, 255, 0.7);
 	transition: inherit
 }
 
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM:hover {
+.jumpToPresentBar-G1R9s6:hover {
 	background: var(--main-color)
 }
 
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM:hover>button {
+.jumpToPresentBar-G1R9s6:hover>button {
 	color: #fff
 }
 
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM:active {
+.jumpToPresentBar-G1R9s6:active {
 	transform: scale(0.99)
 }
 
@@ -2338,6 +2425,30 @@ textarea,
 	border-color: transparent
 }
 
+.button-3HqqDX {
+	background-color: var(--main-color)
+}
+
+.button-3HqqDX:hover {
+	background-color: var(--hover-color)
+}
+
+.tile-2naSqK {
+	background-color: var(--backdrop-overlay)
+}
+
+.colorable-1bkp8v.primaryDark-3mSFDl {
+	background-color: var(--background-overlay)
+}
+
+.colorable-1bkp8v.primaryDark-3mSFDl:hover {
+	background-color: var(--hover-color)
+}
+
+.centerButton-3CaNcJ {
+	border-radius: 50% !important
+}
+
 .welcomeMessage-3_Mcht .h1-1IDj26 {
 	color: var(--main-color)
 }
@@ -2440,11 +2551,11 @@ textarea,
 }
 
 .container-1YxwTf .isMentioned-N-h9aa {
-	background: var(--main-color);
+	background: rgba(255, 255, 255, 0.1)
 }
 
 .container-1YxwTf .isMentioned-N-h9aa:after {
-	background: var(--main-color);
+	background: rgba(255, 255, 255, 0.1);
 	border-left: 4px solid var(--main-color);
 	border-radius: 2px 0 0 2px
 }
@@ -2881,7 +2992,7 @@ textarea,
 	background: rgba(255, 255, 255, 0.07)
 }
 
-.contents-2mQqc9 .markup-2BOw-j code.inline {
+.markup-2BOw-j code.inline {
 	padding: 3.5px 7.5px;
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 3px;
@@ -2890,11 +3001,11 @@ textarea,
 	line-height: 22px
 }
 
-.contents-2mQqc9 .markup-2BOw-j code.inline+pre {
+.markup-2BOw-j code.inline+pre {
 	margin-top: -1px
 }
 
-.contents-2mQqc9 .markup-2BOw-j pre {
+.markup-2BOw-j pre {
 	max-width: 93%;
 	padding: 0;
 	background: transparent;
@@ -2902,7 +3013,7 @@ textarea,
 	font-family: var(--code-font)
 }
 
-.contents-2mQqc9 .markup-2BOw-j pre>.hljs {
+.markup-2BOw-j pre>.hljs {
 	position: relative;
 	padding: 6px;
 	background: rgba(0, 0, 0, 0.42);
@@ -2911,7 +3022,7 @@ textarea,
 	color: rgba(255, 255, 255, 0.7)
 }
 
-.contents-2mQqc9 .markup-2BOw-j pre>.hljs:before {
+.markup-2BOw-j pre>.hljs:before {
 	height: 10px;
 	color: rgba(255, 255, 255, 0.3);
 	line-height: 10px;
@@ -2922,7 +3033,7 @@ code {
 	font-family: var(--code-font)
 }
 
-.container-1YxwTf .hljs:before {
+.hljs:before {
 	display: block;
 	float: right;
 	text-align: right;
@@ -2931,896 +3042,896 @@ code {
 	pointer-events: none
 }
 
-.container-1YxwTf .hljs[class~="1c" i]:before {
+.hljs[class~="1c" i]:before {
 	content: "1C:Enterprise"
 }
 
-.container-1YxwTf .hljs[class~="abnf" i]:before {
+.hljs[class~="abnf" i]:before {
 	content: "ABNF"
 }
 
-.container-1YxwTf .hljs[class~="accesslog" i]:before {
+.hljs[class~="accesslog" i]:before {
 	content: "Access Log"
 }
 
-.container-1YxwTf .hljs[class~="actionscript" i]:before,
-.container-1YxwTf .hljs[class~="as" i]:before {
+.hljs[class~="actionscript" i]:before,
+.hljs[class~="as" i]:before {
 	content: "ActionScript"
 }
 
-.container-1YxwTf .hljs[class~="ada" i]:before {
+.hljs[class~="ada" i]:before {
 	content: "Ada"
 }
 
-.container-1YxwTf .hljs[class~="apache" i]:before,
-.container-1YxwTf .hljs[class~="apacheconf" i]:before {
+.hljs[class~="apache" i]:before,
+.hljs[class~="apacheconf" i]:before {
 	content: "Apache"
 }
 
-.container-1YxwTf .hljs[class~="applescript" i]:before,
-.container-1YxwTf .hljs[class~="osascript" i]:before {
+.hljs[class~="applescript" i]:before,
+.hljs[class~="osascript" i]:before {
 	content: "Applescript"
 }
 
-.container-1YxwTf .hljs[class~="arduino" i]:before {
+.hljs[class~="arduino" i]:before {
 	content: "Arduino"
 }
 
-.container-1YxwTf .hljs[class~="armasm" i]:before,
-.container-1YxwTf .hljs[class~="arm" i]:before {
+.hljs[class~="armasm" i]:before,
+.hljs[class~="arm" i]:before {
 	content: "ARM Assembly"
 }
 
-.container-1YxwTf .hljs[class~="asciidoc" i]:before,
-.container-1YxwTf .hljs[class~="adoc" i]:before {
+.hljs[class~="asciidoc" i]:before,
+.hljs[class~="adoc" i]:before {
 	content: "AsciiDoc"
 }
 
-.container-1YxwTf .hljs[class~="aspectj" i]:before {
+.hljs[class~="aspectj" i]:before {
 	content: "AspectJ"
 }
 
-.container-1YxwTf .hljs[class~="atom" i]:before {
+.hljs[class~="atom" i]:before {
 	content: "Atom Feed (XML)"
 }
 
-.container-1YxwTf .hljs[class~="autohotkey" i]:before {
+.hljs[class~="autohotkey" i]:before {
 	content: "AutoHotkey"
 }
 
-.container-1YxwTf .hljs[class~="autoit" i]:before {
+.hljs[class~="autoit" i]:before {
 	content: "AutoIt"
 }
 
-.container-1YxwTf .hljs[class~="avrasm" i]:before {
+.hljs[class~="avrasm" i]:before {
 	content: "AVR Assembler"
 }
 
-.container-1YxwTf .hljs[class~="awk" i]:before {
+.hljs[class~="awk" i]:before {
 	content: "awk"
 }
 
-.container-1YxwTf .hljs[class~="axapta" i]:before {
+.hljs[class~="axapta" i]:before {
 	content: "Axapta"
 }
 
-.container-1YxwTf .hljs[class~="bash" i]:before,
-.container-1YxwTf .hljs[class~="sh" i]:before,
-.container-1YxwTf .hljs[class~="zsh" i]:before {
+.hljs[class~="bash" i]:before,
+.hljs[class~="sh" i]:before,
+.hljs[class~="zsh" i]:before {
 	content: "Bash"
 }
 
-.container-1YxwTf .hljs[class~="basic" i]:before {
+.hljs[class~="basic" i]:before {
 	content: "Basic"
 }
 
-.container-1YxwTf .hljs[class~="dos" i]:before,
-.container-1YxwTf .hljs[class~="bat" i]:before,
-.container-1YxwTf .hljs[class~="cmd" i]:before {
+.hljs[class~="dos" i]:before,
+.hljs[class~="bat" i]:before,
+.hljs[class~="cmd" i]:before {
 	content: "Batch"
 }
 
-.container-1YxwTf .hljs[class~="bnf" i]:before,
-.container-1YxwTf .hljs[class~="bf" i]:before {
+.hljs[class~="bnf" i]:before,
+.hljs[class~="bf" i]:before {
 	content: "BNF"
 }
 
-.container-1YxwTf .hljs[class~="brainfuck" i]:before {
+.hljs[class~="brainfuck" i]:before {
 	content: "Brainfuck"
 }
 
-.container-1YxwTf .hljs[class~="c" i]:before,
-.container-1YxwTf .hljs[class~="h" i]:before {
+.hljs[class~="c" i]:before,
+.hljs[class~="h" i]:before {
 	content: "C/C++"
 }
 
-.container-1YxwTf .hljs[class~="cc" i]:before,
-.container-1YxwTf .hljs[class~="cpp" i]:before,
-.container-1YxwTf .hljs[class~="hpp" i]:before {
+.hljs[class~="cc" i]:before,
+.hljs[class~="cpp" i]:before,
+.hljs[class~="hpp" i]:before {
 	content: "C++"
 }
 
-.container-1YxwTf .hljs[class~="cs" i]:before,
-.container-1YxwTf .hljs[class~="csharp" i]:before {
+.hljs[class~="cs" i]:before,
+.hljs[class~="csharp" i]:before {
 	content: "C#"
 }
 
-.container-1YxwTf .hljs[class~="cal" i]:before {
+.hljs[class~="cal" i]:before {
 	content: "C/AL"
 }
 
-.container-1YxwTf .hljs[class~="capnproto" i]:before,
-.container-1YxwTf .hljs[class~="capnp" i]:before {
+.hljs[class~="capnproto" i]:before,
+.hljs[class~="capnp" i]:before {
 	content: "Cap'n Proto"
 }
 
-.container-1YxwTf .hljs[class~="ceylon" i]:before {
+.hljs[class~="ceylon" i]:before {
 	content: "Ceylon"
 }
 
-.container-1YxwTf .hljs[class~="clean" i]:before,
-.container-1YxwTf .hljs[class~="icl" i]:before,
-.container-1YxwTf .hljs[class~="dcl" i]:before {
+.hljs[class~="clean" i]:before,
+.hljs[class~="icl" i]:before,
+.hljs[class~="dcl" i]:before {
 	content: "Clean"
 }
 
-.container-1YxwTf .hljs[class~="clojure" i]:before,
-.container-1YxwTf .hljs[class~="clj" i]:before {
+.hljs[class~="clojure" i]:before,
+.hljs[class~="clj" i]:before {
 	content: "Clojure"
 }
 
-.container-1YxwTf .hljs[class~="clojure-repl" i]:before {
+.hljs[class~="clojure-repl" i]:before {
 	content: "Clojure REPL"
 }
 
-.container-1YxwTf .hljs[class~="cmake" i]:before {
+.hljs[class~="cmake" i]:before {
 	content: "CMake"
 }
 
-.container-1YxwTf .hljs[class~="coffeescript" i]:before,
-.container-1YxwTf .hljs[class~="coffee" i]:before,
-.container-1YxwTf .hljs[class~="cson" i]:before,
-.container-1YxwTf .hljs[class~="iced" i]:before {
+.hljs[class~="coffeescript" i]:before,
+.hljs[class~="coffee" i]:before,
+.hljs[class~="cson" i]:before,
+.hljs[class~="iced" i]:before {
 	content: "CoffeeScript"
 }
 
-.container-1YxwTf .hljs[class~="coq" i]:before {
+.hljs[class~="coq" i]:before {
 	content: "Coq"
 }
 
-.container-1YxwTf .hljs[class~="cos" i]:before,
-.container-1YxwTf .hljs[class~="cls" i]:before {
+.hljs[class~="cos" i]:before,
+.hljs[class~="cls" i]:before {
 	content: "Caché Object Script"
 }
 
-.container-1YxwTf .hljs[class~="podspec" i]:before {
+.hljs[class~="podspec" i]:before {
 	content: "CocoaPod"
 }
 
-.container-1YxwTf .hljs[class~="crmsh" i]:before,
-.container-1YxwTf .hljs[class~="crm" i]:before,
-.container-1YxwTf .hljs[class~="pcmk" i]:before {
+.hljs[class~="crmsh" i]:before,
+.hljs[class~="crm" i]:before,
+.hljs[class~="pcmk" i]:before {
 	content: "crmsh"
 }
 
-.container-1YxwTf .hljs[class~="crystal" i]:before,
-.container-1YxwTf .hljs[class~="cr" i]:before {
+.hljs[class~="crystal" i]:before,
+.hljs[class~="cr" i]:before {
 	content: "Crystal"
 }
 
-.container-1YxwTf .hljs[class~="csp" i]:before {
+.hljs[class~="csp" i]:before {
 	content: "CSP"
 }
 
-.container-1YxwTf .hljs[class~="css" i]:before {
+.hljs[class~="css" i]:before {
 	content: "CSS"
 }
 
-.container-1YxwTf .hljs[class~="d" i]:before {
+.hljs[class~="d" i]:before {
 	content: "D"
 }
 
-.container-1YxwTf .hljs[class~="dart" i]:before {
+.hljs[class~="dart" i]:before {
 	content: "Dart"
 }
 
-.container-1YxwTf .hljs[class~="delphi" i]:before,
-.container-1YxwTf .hljs[class~="dfm" i]:before,
-.container-1YxwTf .hljs[class~="dpr" i]:before {
+.hljs[class~="delphi" i]:before,
+.hljs[class~="dfm" i]:before,
+.hljs[class~="dpr" i]:before {
 	content: "Delphi (Object Pascal)"
 }
 
-.container-1YxwTf .hljs[class~="diff" i]:before,
-.container-1YxwTf .hljs[class~="patch" i]:before {
+.hljs[class~="diff" i]:before,
+.hljs[class~="patch" i]:before {
 	content: "Diff"
 }
 
-.container-1YxwTf .hljs[class~="django" i]:before {
+.hljs[class~="django" i]:before {
 	content: "Django"
 }
 
-.container-1YxwTf .hljs[class~="dns" i]:before,
-.container-1YxwTf .hljs[class~="bind" i]:before,
-.container-1YxwTf .hljs[class~="zone" i]:before {
+.hljs[class~="dns" i]:before,
+.hljs[class~="bind" i]:before,
+.hljs[class~="zone" i]:before {
 	content: "DNS Zone File"
 }
 
-.container-1YxwTf .hljs[class~="dockerfile" i]:before,
-.container-1YxwTf .hljs[class~="docker" i]:before {
+.hljs[class~="dockerfile" i]:before,
+.hljs[class~="docker" i]:before {
 	content: "Dockerfile"
 }
 
-.container-1YxwTf .hljs[class~="dsconfig" i]:before {
+.hljs[class~="dsconfig" i]:before {
 	content: "dsconfig"
 }
 
-.container-1YxwTf .hljs[class~="dts" i]:before {
+.hljs[class~="dts" i]:before {
 	content: "Device Tree"
 }
 
-.container-1YxwTf .hljs[class~="dust" i]:before,
-.container-1YxwTf .hljs[class~="dst" i]:before {
+.hljs[class~="dust" i]:before,
+.hljs[class~="dst" i]:before {
 	content: "Dust"
 }
 
-.container-1YxwTf .hljs[class~="ebnf" i]:before {
+.hljs[class~="ebnf" i]:before {
 	content: "EBNF"
 }
 
-.container-1YxwTf .hljs[class~="elixir" i]:before {
+.hljs[class~="elixir" i]:before {
 	content: "Elixir"
 }
 
-.container-1YxwTf .hljs[class~="elm" i]:before {
+.hljs[class~="elm" i]:before {
 	content: "Elm"
 }
 
-.container-1YxwTf .hljs[class~="erb" i]:before {
+.hljs[class~="erb" i]:before {
 	content: "eRuby"
 }
 
-.container-1YxwTf .hljs[class~="erlang" i]:before,
-.container-1YxwTf .hljs[class~="erl" i]:before {
+.hljs[class~="erlang" i]:before,
+.hljs[class~="erl" i]:before {
 	content: "Erlang"
 }
 
-.container-1YxwTf .hljs[class~="erlang-repl" i]:before {
+.hljs[class~="erlang-repl" i]:before {
 	content: "Erlang REPL"
 }
 
-.container-1YxwTf .hljs[class~="excel" i]:before,
-.container-1YxwTf .hljs[class~="xls" i]:before,
-.container-1YxwTf .hljs[class~="xlsx" i]:before {
+.hljs[class~="excel" i]:before,
+.hljs[class~="xls" i]:before,
+.hljs[class~="xlsx" i]:before {
 	content: "Excel"
 }
 
-.container-1YxwTf .hljs[class~="fs" i]:before,
-.container-1YxwTf .hljs[class~="fsharp" i]:before {
+.hljs[class~="fs" i]:before,
+.hljs[class~="fsharp" i]:before {
 	content: "F#"
 }
 
-.container-1YxwTf .hljs[class~="fix" i]:before {
+.hljs[class~="fix" i]:before {
 	content: "Fix"
 }
 
-.container-1YxwTf .hljs[class~="flix" i]:before {
+.hljs[class~="flix" i]:before {
 	content: "Flix"
 }
 
-.container-1YxwTf .hljs[class~="fortran" i]:before,
-.container-1YxwTf .hljs[class~="f90" i]:before,
-.container-1YxwTf .hljs[class~="f95" i]:before {
+.hljs[class~="fortran" i]:before,
+.hljs[class~="f90" i]:before,
+.hljs[class~="f95" i]:before {
 	content: "Fortran"
 }
 
-.container-1YxwTf .hljs[class~="gams" i]:before,
-.container-1YxwTf .hljs[class~="gms" i]:before {
+.hljs[class~="gams" i]:before,
+.hljs[class~="gms" i]:before {
 	content: "GAMS"
 }
 
-.container-1YxwTf .hljs[class~="gauss" i]:before,
-.container-1YxwTf .hljs[class~="gss" i]:before {
+.hljs[class~="gauss" i]:before,
+.hljs[class~="gss" i]:before {
 	content: "GAUSS"
 }
 
-.container-1YxwTf .hljs[class~="gcode" i]:before,
-.container-1YxwTf .hljs[class~="nc" i]:before {
+.hljs[class~="gcode" i]:before,
+.hljs[class~="nc" i]:before {
 	content: "G-code"
 }
 
-.container-1YxwTf .hljs[class~="gherkin" i]:before,
-.container-1YxwTf .hljs[class~="feature" i]:before {
+.hljs[class~="gherkin" i]:before,
+.hljs[class~="feature" i]:before {
 	content: "Gherkin"
 }
 
-.container-1YxwTf .hljs[class~="glsl" i]:before {
+.hljs[class~="glsl" i]:before {
 	content: "GLSL"
 }
 
-.container-1YxwTf .hljs[class~="go" i]:before,
-.container-1YxwTf .hljs[class~="golang" i]:before {
+.hljs[class~="go" i]:before,
+.hljs[class~="golang" i]:before {
 	content: "Go"
 }
 
-.container-1YxwTf .hljs[class~="golo" i]:before {
+.hljs[class~="golo" i]:before {
 	content: "Golo"
 }
 
-.container-1YxwTf .hljs[class~="gradle" i]:before {
+.hljs[class~="gradle" i]:before {
 	content: "Gradle"
 }
 
-.container-1YxwTf .hljs[class~="groovy" i]:before {
+.hljs[class~="groovy" i]:before {
 	content: "Groovy"
 }
 
-.container-1YxwTf .hljs[class~="haml" i]:before {
+.hljs[class~="haml" i]:before {
 	content: "Haml"
 }
 
-.container-1YxwTf .hljs[class~="handlebars" i]:before,
-.container-1YxwTf .hljs[class~="hbs" i]:before {
+.hljs[class~="handlebars" i]:before,
+.hljs[class~="hbs" i]:before {
 	content: "Handlebars"
 }
 
-.container-1YxwTf .hljs[class~="haskell" i]:before,
-.container-1YxwTf .hljs[class~="hs" i]:before {
+.hljs[class~="haskell" i]:before,
+.hljs[class~="hs" i]:before {
 	content: "Haskell"
 }
 
-.container-1YxwTf .hljs[class~="haxe" i]:before,
-.container-1YxwTf .hljs[class~="hx" i]:before {
+.hljs[class~="haxe" i]:before,
+.hljs[class~="hx" i]:before {
 	content: "Haxe"
 }
 
-.container-1YxwTf .hljs[class~="hsp" i]:before {
+.hljs[class~="hsp" i]:before {
 	content: "HSP"
 }
 
-.container-1YxwTf .hljs[class~="html" i]:before {
+.hljs[class~="html" i]:before {
 	content: "HTML"
 }
 
-.container-1YxwTf .hljs[class~="htmlbars" i]:before {
+.hljs[class~="htmlbars" i]:before {
 	content: "HTMLBars"
 }
 
-.container-1YxwTf .hljs[class~="http" i]:before {
+.hljs[class~="http" i]:before {
 	content: "HTTP"
 }
 
-.container-1YxwTf .hljs[class~="https" i]:before {
+.hljs[class~="https" i]:before {
 	content: "HTTPS"
 }
 
-.container-1YxwTf .hljs[class~="hy" i]:before,
-.container-1YxwTf .hljs[class~="hylang" i]:before {
+.hljs[class~="hy" i]:before,
+.hljs[class~="hylang" i]:before {
 	content: "Hy"
 }
 
-.container-1YxwTf .hljs[class~="inform7" i]:before,
-.container-1YxwTf .hljs[class~="i7" i]:before {
+.hljs[class~="inform7" i]:before,
+.hljs[class~="i7" i]:before {
 	content: "Inform7"
 }
 
-.container-1YxwTf .hljs[class~="ini" i]:before {
+.hljs[class~="ini" i]:before {
 	content: "INI"
 }
 
-.container-1YxwTf .hljs[class~="irb" i]:before {
+.hljs[class~="irb" i]:before {
 	content: "IRB"
 }
 
-.container-1YxwTf .hljs[class~="irpf90" i]:before {
+.hljs[class~="irpf90" i]:before {
 	content: "IRPF90"
 }
 
-.container-1YxwTf .hljs[class~="java" i]:before,
-.container-1YxwTf .hljs[class~="jsp" i]:before {
+.hljs[class~="java" i]:before,
+.hljs[class~="jsp" i]:before {
 	content: "Java"
 }
 
-.container-1YxwTf .hljs[class~="javascript" i]:before,
-.container-1YxwTf .hljs[class~="js" i]:before,
-.container-1YxwTf .hljs[class~="jsx" i]:before {
+.hljs[class~="javascript" i]:before,
+.hljs[class~="js" i]:before,
+.hljs[class~="jsx" i]:before {
 	content: "JavaScript/JSX"
 }
 
-.container-1YxwTf .hljs[class~="xjb" i]:before {
+.hljs[class~="xjb" i]:before {
 	content: "JAXB (XML)"
 }
 
-.container-1YxwTf .hljs[class~="jboss-cli" i]:before,
-.container-1YxwTf .hljs[class~="wildfly-cli" i]:before {
+.hljs[class~="jboss-cli" i]:before,
+.hljs[class~="wildfly-cli" i]:before {
 	content: "JBoss CLI"
 }
 
-.container-1YxwTf .hljs[class~="jinja" i]:before {
+.hljs[class~="jinja" i]:before {
 	content: "Jinja"
 }
 
-.container-1YxwTf .hljs[class~="json" i]:before {
+.hljs[class~="json" i]:before {
 	content: "JSON"
 }
 
-.container-1YxwTf .hljs[class~="julia" i]:before {
+.hljs[class~="julia" i]:before {
 	content: "Julia"
 }
 
-.container-1YxwTf .hljs[class~="julia-repl" i]:before {
+.hljs[class~="julia-repl" i]:before {
 	content: "Julia REPL"
 }
 
-.container-1YxwTf .hljs[class~="kotlin" i]:before {
+.hljs[class~="kotlin" i]:before {
 	content: "Kotlin"
 }
 
-.container-1YxwTf .hljs[class~="lasso" i]:before,
-.container-1YxwTf .hljs[class~="lassoscript" i]:before,
-.container-1YxwTf .hljs[class~="ls" i]:before {
+.hljs[class~="lasso" i]:before,
+.hljs[class~="lassoscript" i]:before,
+.hljs[class~="ls" i]:before {
 	content: "Lasso"
 }
 
-.container-1YxwTf .hljs[class~="ldif" i]:before {
+.hljs[class~="ldif" i]:before {
 	content: "LDIF"
 }
 
-.container-1YxwTf .hljs[class~="leaf" i]:before {
+.hljs[class~="leaf" i]:before {
 	content: "Leaf"
 }
 
-.container-1YxwTf .hljs[class~="less" i]:before {
+.hljs[class~="less" i]:before {
 	content: "Less"
 }
 
-.container-1YxwTf .hljs[class~="lisp" i]:before {
+.hljs[class~="lisp" i]:before {
 	content: "Lisp"
 }
 
-.container-1YxwTf .hljs[class~="livecodeserver" i]:before {
+.hljs[class~="livecodeserver" i]:before {
 	content: "LiveCode Server"
 }
 
-.container-1YxwTf .hljs[class~="livescript" i]:before,
-.container-1YxwTf .hljs[class~="ls" i]:before {
+.hljs[class~="livescript" i]:before,
+.hljs[class~="ls" i]:before {
 	content: "LiveScript"
 }
 
-.container-1YxwTf .hljs[class~="llvm" i]:before {
+.hljs[class~="llvm" i]:before {
 	content: "LLVM IR"
 }
 
-.container-1YxwTf .hljs[class~="lsl" i]:before {
+.hljs[class~="lsl" i]:before {
 	content: "LSL"
 }
 
-.container-1YxwTf .hljs[class~="lua" i]:before {
+.hljs[class~="lua" i]:before {
 	content: "Lua"
 }
 
-.container-1YxwTf .hljs[class~="makefile" i]:before,
-.container-1YxwTf .hljs[class~="mk" i]:before,
-.container-1YxwTf .hljs[class~="mak" i]:before {
+.hljs[class~="makefile" i]:before,
+.hljs[class~="mk" i]:before,
+.hljs[class~="mak" i]:before {
 	content: "Makefile"
 }
 
-.container-1YxwTf .hljs[class~="markdown" i]:before,
-.container-1YxwTf .hljs[class~="md" i]:before,
-.container-1YxwTf .hljs[class~="mkd" i]:before,
-.container-1YxwTf .hljs[class~="mkdown" i]:before {
+.hljs[class~="markdown" i]:before,
+.hljs[class~="md" i]:before,
+.hljs[class~="mkd" i]:before,
+.hljs[class~="mkdown" i]:before {
 	content: "Markdown"
 }
 
-.container-1YxwTf .hljs[class~="mathematica" i]:before,
-.container-1YxwTf .hljs[class~="mma" i]:before {
+.hljs[class~="mathematica" i]:before,
+.hljs[class~="mma" i]:before {
 	content: "Mathematica"
 }
 
-.container-1YxwTf .hljs[class~="matlab" i]:before {
+.hljs[class~="matlab" i]:before {
 	content: "MatLab"
 }
 
-.container-1YxwTf .hljs[class~="maxima" i]:before {
+.hljs[class~="maxima" i]:before {
 	content: "Maxima"
 }
 
-.container-1YxwTf .hljs[class~="mel" i]:before {
+.hljs[class~="mel" i]:before {
 	content: "MEL"
 }
 
-.container-1YxwTf .hljs[class~="mercury" i]:before,
-.container-1YxwTf .hljs[class~="m" i]:before,
-.container-1YxwTf .hljs[class~="moo" i]:before {
+.hljs[class~="mercury" i]:before,
+.hljs[class~="m" i]:before,
+.hljs[class~="moo" i]:before {
 	content: "Mercury"
 }
 
-.container-1YxwTf .hljs[class~="mipsasm" i]:before,
-.container-1YxwTf .hljs[class~="mips" i]:before {
+.hljs[class~="mipsasm" i]:before,
+.hljs[class~="mips" i]:before {
 	content: "MIPS Assembly"
 }
 
-.container-1YxwTf .hljs[class~="routeros" i]:before,
-.container-1YxwTf .hljs[class~="mikrotik" i]:before {
+.hljs[class~="routeros" i]:before,
+.hljs[class~="mikrotik" i]:before {
 	content: "Mikrotik RouterOS"
 }
 
-.container-1YxwTf .hljs[class~="mizar" i]:before {
+.hljs[class~="mizar" i]:before {
 	content: "Mizar"
 }
 
-.container-1YxwTf .hljs[class~="mojolicious" i]:before {
+.hljs[class~="mojolicious" i]:before {
 	content: "Mojolicious"
 }
 
-.container-1YxwTf .hljs[class~="monkey" i]:before {
+.hljs[class~="monkey" i]:before {
 	content: "Monkey"
 }
 
-.container-1YxwTf .hljs[class~="moonscript" i]:before,
-.container-1YxwTf .hljs[class~="moon" i]:before {
+.hljs[class~="moonscript" i]:before,
+.hljs[class~="moon" i]:before {
 	content: "MoonScript"
 }
 
-.container-1YxwTf .hljs[class~="n1ql" i]:before {
+.hljs[class~="n1ql" i]:before {
 	content: "N1QL"
 }
 
-.container-1YxwTf .hljs[class~="nginx" i]:before,
-.container-1YxwTf .hljs[class~="nginxconf" i]:before {
+.hljs[class~="nginx" i]:before,
+.hljs[class~="nginxconf" i]:before {
 	content: "Nginx"
 }
 
-.container-1YxwTf .hljs[class~="nimrod" i]:before,
-.container-1YxwTf .hljs[class~="nim" i]:before {
+.hljs[class~="nimrod" i]:before,
+.hljs[class~="nim" i]:before {
 	content: "Nimrod"
 }
 
-.container-1YxwTf .hljs[class~="nix" i]:before,
-.container-1YxwTf .hljs[class~="nixos" i]:before {
+.hljs[class~="nix" i]:before,
+.hljs[class~="nixos" i]:before {
 	content: "Nix"
 }
 
-.container-1YxwTf .hljs[class~="nsis" i]:before {
+.hljs[class~="nsis" i]:before {
 	content: "NSIS"
 }
 
-.container-1YxwTf .hljs[class~="objectivec" i]:before,
-.container-1YxwTf .hljs[class~="objc" i]:before,
-.container-1YxwTf .hljs[class~="obj-c" i]:before,
-.container-1YxwTf .hljs[class~="mm" i]:before {
+.hljs[class~="objectivec" i]:before,
+.hljs[class~="objc" i]:before,
+.hljs[class~="obj-c" i]:before,
+.hljs[class~="mm" i]:before {
 	content: "Objective-C"
 }
 
-.container-1YxwTf .hljs[class~="ocaml" i]:before,
-.container-1YxwTf .hljs[class~="ml" i]:before {
+.hljs[class~="ocaml" i]:before,
+.hljs[class~="ml" i]:before {
 	content: "OCaml"
 }
 
-.container-1YxwTf .hljs[class~="openscad" i]:before,
-.container-1YxwTf .hljs[class~="scad" i]:before {
+.hljs[class~="openscad" i]:before,
+.hljs[class~="scad" i]:before {
 	content: "OpenSCAD"
 }
 
-.container-1YxwTf .hljs[class~="ruleslanguage" i]:before {
+.hljs[class~="ruleslanguage" i]:before {
 	content: "Oracle Rules Language"
 }
 
-.container-1YxwTf .hljs[class~="oxygene" i]:before {
+.hljs[class~="oxygene" i]:before {
 	content: "Oxygene"
 }
 
-.container-1YxwTf .hljs[class~="parser3" i]:before {
+.hljs[class~="parser3" i]:before {
 	content: "Parser3"
 }
 
-.container-1YxwTf .hljs[class~="pascal" i]:before,
-.container-1YxwTf .hljs[class~="pas" i]:before,
-.container-1YxwTf .hljs[class~="freepascal" i]:before,
-.container-1YxwTf .hljs[class~="lazarus" i]:before,
-.container-1YxwTf .hljs[class~="lfm" i]:before,
-.container-1YxwTf .hljs[class~="lpr" i]:before {
+.hljs[class~="pascal" i]:before,
+.hljs[class~="pas" i]:before,
+.hljs[class~="freepascal" i]:before,
+.hljs[class~="lazarus" i]:before,
+.hljs[class~="lfm" i]:before,
+.hljs[class~="lpr" i]:before {
 	content: "Pascal/Object Pascal"
 }
 
-.container-1YxwTf .hljs[class~="perl" i]:before,
-.container-1YxwTf .hljs[class~="pl" i]:before,
-.container-1YxwTf .hljs[class~="pm" i]:before {
+.hljs[class~="perl" i]:before,
+.hljs[class~="pl" i]:before,
+.hljs[class~="pm" i]:before {
 	content: "Perl"
 }
 
-.container-1YxwTf .hljs[class~="pf" i]:before {
+.hljs[class~="pf" i]:before {
 	content: "OpenBSD PF"
 }
 
-.container-1YxwTf .hljs[class~="php" i]:before,
-.container-1YxwTf .hljs[class~="php3" i]:before,
-.container-1YxwTf .hljs[class~="php4" i]:before,
-.container-1YxwTf .hljs[class~="php5" i]:before,
-.container-1YxwTf .hljs[class~="php6" i]:before {
+.hljs[class~="php" i]:before,
+.hljs[class~="php3" i]:before,
+.hljs[class~="php4" i]:before,
+.hljs[class~="php5" i]:before,
+.hljs[class~="php6" i]:before {
 	content: "PHP"
 }
 
-.container-1YxwTf .hljs[class~="pony" i]:before {
+.hljs[class~="pony" i]:before {
 	content: "Pony"
 }
 
-.container-1YxwTf .hljs[class~="powershell" i]:before,
-.container-1YxwTf .hljs[class~="ps" i]:before {
+.hljs[class~="powershell" i]:before,
+.hljs[class~="ps" i]:before {
 	content: "PowerShell"
 }
 
-.container-1YxwTf .hljs[class~="processing" i]:before {
+.hljs[class~="processing" i]:before {
 	content: "Processing"
 }
 
-.container-1YxwTf .hljs[class~="prolog" i]:before {
+.hljs[class~="prolog" i]:before {
 	content: "Prolog"
 }
 
-.container-1YxwTf .hljs[class~="plist" i]:before {
+.hljs[class~="plist" i]:before {
 	content: "Property List"
 }
 
-.container-1YxwTf .hljs[class~="protobuf" i]:before {
+.hljs[class~="protobuf" i]:before {
 	content: "Protocol Buffers"
 }
 
-.container-1YxwTf .hljs[class~="puppet" i]:before,
-.container-1YxwTf .hljs[class~="pp" i]:before {
+.hljs[class~="puppet" i]:before,
+.hljs[class~="pp" i]:before {
 	content: "Puppet"
 }
 
-.container-1YxwTf .hljs[class~="purebasic" i]:before,
-.container-1YxwTf .hljs[class~="pb" i]:before,
-.container-1YxwTf .hljs[class~="pbi" i]:before {
+.hljs[class~="purebasic" i]:before,
+.hljs[class~="pb" i]:before,
+.hljs[class~="pbi" i]:before {
 	content: "PureBASIC"
 }
 
-.container-1YxwTf .hljs[class~="python" i]:before,
-.container-1YxwTf .hljs[class~="py" i]:before,
-.container-1YxwTf .hljs[class~="gyp" i]:before {
+.hljs[class~="python" i]:before,
+.hljs[class~="py" i]:before,
+.hljs[class~="gyp" i]:before {
 	content: "Python"
 }
 
-.container-1YxwTf .hljs[class~="profile" i]:before {
+.hljs[class~="profile" i]:before {
 	content: "Python profile"
 }
 
-.container-1YxwTf .hljs[class~="q" i]:before,
-.container-1YxwTf .hljs[class~="k" i]:before,
-.container-1YxwTf .hljs[class~="kdb" i]:before {
+.hljs[class~="q" i]:before,
+.hljs[class~="k" i]:before,
+.hljs[class~="kdb" i]:before {
 	content: "Q"
 }
 
-.container-1YxwTf .hljs[class~="qml" i]:before,
-.container-1YxwTf .hljs[class~="qt" i]:before {
+.hljs[class~="qml" i]:before,
+.hljs[class~="qt" i]:before {
 	content: "QML"
 }
 
-.container-1YxwTf .hljs[class~="r" i]:before {
+.hljs[class~="r" i]:before {
 	content: "R"
 }
 
-.container-1YxwTf .hljs[class~="rib" i]:before {
+.hljs[class~="rib" i]:before {
 	content: "RenderMan RIB"
 }
 
-.container-1YxwTf .hljs[class~="rsl" i]:before {
+.hljs[class~="rsl" i]:before {
 	content: "RenderMan RSL"
 }
 
-.container-1YxwTf .hljs[class~="roboconf" i]:before,
-.container-1YxwTf .hljs[class~="graph" i]:before,
-.container-1YxwTf .hljs[class~="instances" i]:before {
+.hljs[class~="roboconf" i]:before,
+.hljs[class~="graph" i]:before,
+.hljs[class~="instances" i]:before {
 	content: "Roboconf"
 }
 
-.container-1YxwTf .hljs[class~="rss" i]:before {
+.hljs[class~="rss" i]:before {
 	content: "RSS Feed (XML)"
 }
 
-.container-1YxwTf .hljs[class~="ruby" i]:before,
-.container-1YxwTf .hljs[class~="rb" i]:before {
+.hljs[class~="ruby" i]:before,
+.hljs[class~="rb" i]:before {
 	content: "Ruby"
 }
 
-.container-1YxwTf .hljs[class~="thor" i]:before {
+.hljs[class~="thor" i]:before {
 	content: "Thor (Ruby)"
 }
 
-.container-1YxwTf .hljs[class~="gemspec" i]:before {
+.hljs[class~="gemspec" i]:before {
 	content: "Ruby Gem"
 }
 
-.container-1YxwTf .hljs[class~="rust" i]:before,
-.container-1YxwTf .hljs[class~="rs" i]:before {
+.hljs[class~="rust" i]:before,
+.hljs[class~="rs" i]:before {
 	content: "Rust"
 }
 
-.container-1YxwTf .hljs[class~="scala" i]:before {
+.hljs[class~="scala" i]:before {
 	content: "Scala"
 }
 
-.container-1YxwTf .hljs[class~="scheme" i]:before {
+.hljs[class~="scheme" i]:before {
 	content: "Scheme"
 }
 
-.container-1YxwTf .hljs[class~="scilab" i]:before,
-.container-1YxwTf .hljs[class~="sci" i]:before {
+.hljs[class~="scilab" i]:before,
+.hljs[class~="sci" i]:before {
 	content: "Scilab"
 }
 
-.container-1YxwTf .hljs[class~="scss" i]:before {
+.hljs[class~="scss" i]:before {
 	content: "SCSS"
 }
 
-.container-1YxwTf .hljs[class~="shell" i]:before,
-.container-1YxwTf .hljs[class~="console" i]:before {
+.hljs[class~="shell" i]:before,
+.hljs[class~="console" i]:before {
 	content: "Shell"
 }
 
-.container-1YxwTf .hljs[class~="smali" i]:before {
+.hljs[class~="smali" i]:before {
 	content: "Smali"
 }
 
-.container-1YxwTf .hljs[class~="smalltalk" i]:before,
-.container-1YxwTf .hljs[class~="st" i]:before {
+.hljs[class~="smalltalk" i]:before,
+.hljs[class~="st" i]:before {
 	content: "Smalltalk"
 }
 
-.container-1YxwTf .hljs[class~="sml" i]:before,
-.container-1YxwTf .hljs[class~="ml" i]:before {
+.hljs[class~="sml" i]:before,
+.hljs[class~="ml" i]:before {
 	content: "SML"
 }
 
-.container-1YxwTf .hljs[class~="sqf" i]:before {
+.hljs[class~="sqf" i]:before {
 	content: "SQF"
 }
 
-.container-1YxwTf .hljs[class~="sql" i]:before {
+.hljs[class~="sql" i]:before {
 	content: "SQL"
 }
 
-.container-1YxwTf .hljs[class~="stan" i]:before {
+.hljs[class~="stan" i]:before {
 	content: "Stan"
 }
 
-.container-1YxwTf .hljs[class~="stata" i]:before,
-.container-1YxwTf .hljs[class~="do" i]:before,
-.container-1YxwTf .hljs[class~="ado" i]:before {
+.hljs[class~="stata" i]:before,
+.hljs[class~="do" i]:before,
+.hljs[class~="ado" i]:before {
 	content: "Stata"
 }
 
-.container-1YxwTf .hljs[class~="step21" i]:before,
-.container-1YxwTf .hljs[class~="step" i]:before,
-.container-1YxwTf .hljs[class~="stp" i]:before,
-.container-1YxwTf .hljs[class~="p21" i]:before {
+.hljs[class~="step21" i]:before,
+.hljs[class~="step" i]:before,
+.hljs[class~="stp" i]:before,
+.hljs[class~="p21" i]:before {
 	content: "STEP Part 21"
 }
 
-.container-1YxwTf .hljs[class~="stylus" i]:before,
-.container-1YxwTf .hljs[class~="styl" i]:before {
+.hljs[class~="stylus" i]:before,
+.hljs[class~="styl" i]:before {
 	content: "Stylus"
 }
 
-.container-1YxwTf .hljs[class~="subunit" i]:before {
+.hljs[class~="subunit" i]:before {
 	content: "SubUnit"
 }
 
-.container-1YxwTf .hljs[class~="swift" i]:before {
+.hljs[class~="swift" i]:before {
 	content: "Swift"
 }
 
-.container-1YxwTf .hljs[class~="taggerscript" i]:before {
+.hljs[class~="taggerscript" i]:before {
 	content: "Tagger Script"
 }
 
-.container-1YxwTf .hljs[class~="tap" i]:before {
+.hljs[class~="tap" i]:before {
 	content: "TAP"
 }
 
-.container-1YxwTf .hljs[class~="tcl" i]:before,
-.container-1YxwTf .hljs[class~="tk" i]:before {
+.hljs[class~="tcl" i]:before,
+.hljs[class~="tk" i]:before {
 	content: "Tcl"
 }
 
-.container-1YxwTf .hljs[class~="tex" i]:before {
+.hljs[class~="tex" i]:before {
 	content: "TeX"
 }
 
-.container-1YxwTf .hljs[class~="thrift" i]:before {
+.hljs[class~="thrift" i]:before {
 	content: "Thrift"
 }
 
-.container-1YxwTf .hljs[class~="toml" i]:before {
+.hljs[class~="toml" i]:before {
 	content: "TOML"
 }
 
-.container-1YxwTf .hljs[class~="tp" i]:before {
+.hljs[class~="tp" i]:before {
 	content: "TP"
 }
 
-.container-1YxwTf .hljs[class~="twig" i]:before,
-.container-1YxwTf .hljs[class~="craftcms" i]:before {
+.hljs[class~="twig" i]:before,
+.hljs[class~="craftcms" i]:before {
 	content: "Twig"
 }
 
-.container-1YxwTf .hljs[class~="typescript" i]:before,
-.container-1YxwTf .hljs[class~="ts" i]:before {
+.hljs[class~="typescript" i]:before,
+.hljs[class~="ts" i]:before {
 	content: "TypeScript"
 }
 
-.container-1YxwTf .hljs[class~="vala" i]:before {
+.hljs[class~="vala" i]:before {
 	content: "Vala"
 }
 
-.container-1YxwTf .hljs[class~="vbnet" i]:before,
-.container-1YxwTf .hljs[class~="vb" i]:before {
+.hljs[class~="vbnet" i]:before,
+.hljs[class~="vb" i]:before {
 	content: "VB.NET"
 }
 
-.container-1YxwTf .hljs[class~="vbscript" i]:before,
-.container-1YxwTf .hljs[class~="vbs" i]:before {
+.hljs[class~="vbscript" i]:before,
+.hljs[class~="vbs" i]:before {
 	content: "VBScript"
 }
 
-.container-1YxwTf .hljs[class~="vbscript-html" i]:before {
+.hljs[class~="vbscript-html" i]:before {
 	content: "VBScript HTML"
 }
 
-.container-1YxwTf .hljs[class~="verilog" i]:before,
-.container-1YxwTf .hljs[class~="v" i]:before,
-.container-1YxwTf .hljs[class~="sv" i]:before,
-.container-1YxwTf .hljs[class~="svh" i]:before {
+.hljs[class~="verilog" i]:before,
+.hljs[class~="v" i]:before,
+.hljs[class~="sv" i]:before,
+.hljs[class~="svh" i]:before {
 	content: "Verilog"
 }
 
-.container-1YxwTf .hljs[class~="vhdl" i]:before {
+.hljs[class~="vhdl" i]:before {
 	content: "VHDL"
 }
 
-.container-1YxwTf .hljs[class~="vim" i]:before {
+.hljs[class~="vim" i]:before {
 	content: "Vim Script"
 }
 
-.container-1YxwTf .hljs[class~="x86asm" i]:before {
+.hljs[class~="x86asm" i]:before {
 	content: "x86 Assembly"
 }
 
-.container-1YxwTf .hljs[class~="xl" i]:before,
-.container-1YxwTf .hljs[class~="tao" i]:before {
+.hljs[class~="xl" i]:before,
+.hljs[class~="tao" i]:before {
 	content: "XL"
 }
 
-.container-1YxwTf .hljs[class~="xquery" i]:before,
-.container-1YxwTf .hljs[class~="xq" i]:before,
-.container-1YxwTf .hljs[class~="xpath" i]:before {
+.hljs[class~="xquery" i]:before,
+.hljs[class~="xq" i]:before,
+.hljs[class~="xpath" i]:before {
 	content: "XQuery"
 }
 
-.container-1YxwTf .hljs[class~="yaml" i]:before,
-.container-1YxwTf .hljs[class~="yml" i]:before {
+.hljs[class~="yaml" i]:before,
+.hljs[class~="yml" i]:before {
 	content: "YAML"
 }
 
-.container-1YxwTf .hljs[class~="xhtml" i]:before {
+.hljs[class~="xhtml" i]:before {
 	content: "XHTML"
 }
 
-.container-1YxwTf .hljs[class~="xml" i]:before {
+.hljs[class~="xml" i]:before {
 	content: "XML"
 }
 
-.container-1YxwTf .hljs[class~="xsd" i]:before {
+.hljs[class~="xsd" i]:before {
 	content: "XML Schema"
 }
 
-.container-1YxwTf .hljs[class~="xsl" i]:before {
+.hljs[class~="xsl" i]:before {
 	content: "XSL"
 }
 
-.container-1YxwTf .hljs[class~="zephir" i]:before,
-.container-1YxwTf .hljs[class~="zep" i]:before {
+.hljs[class~="zephir" i]:before,
+.hljs[class~="zep" i]:before {
 	content: "Zephir"
 }
 
@@ -3858,7 +3969,7 @@ code {
 
 .isMentioned-N-h9aa .markup-2BOw-j .mention {
 	padding: 0;
-	background: var(--main-color) !important;
+	background: transparent !important;
 	color: var(--main-color);
 	transition: all .1s ease-in-out
 }
@@ -4090,6 +4201,10 @@ code {
 	margin-top: 25px
 }
 
+.blockedSystemMessage-2Rk1ek:hover .blockedAction-2ZyU8z {
+	color: var(--url-color)
+}
+
 .membersWrap-2h-GB4 {
 	min-width: auto;
 	flex-basis: var(--members-width)
@@ -4287,11 +4402,11 @@ code {
 	content: "CV Admin"
 }
 
-.contents-2mQqc9>img[src*="213067580531933196"]~.header-23xsNx>.username-1A8OIy::after {
+.contents-2mQqc9>img[src*="195270435015884800"]~.header-23xsNx>.username-1A8OIy::after {
 	content: "CV Team"
 }
 
-.contents-2mQqc9>img[src*="206088651493343232"]~.header-23xsNx>.username-1A8OIy::after {
+.contents-2mQqc9>img[src*="213067580531933196"]~.header-23xsNx>.username-1A8OIy::after {
 	content: "CV Team"
 }
 
@@ -4300,10 +4415,6 @@ code {
 }
 
 .contents-2mQqc9>img[src*="126652966265421824"]~.header-23xsNx>.username-1A8OIy::after {
-	content: "CV Team"
-}
-
-.contents-2mQqc9>img[src*="195270435015884800"]~.header-23xsNx>.username-1A8OIy::after {
 	content: "CV Team"
 }
 
@@ -4391,6 +4502,30 @@ code {
 	content: "CV Donator"
 }
 
+.contents-2mQqc9>img[src*="436228721033216009"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
+.contents-2mQqc9>img[src*="66214870705516544"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
+.contents-2mQqc9>img[src*="172426681800196096"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
+.contents-2mQqc9>img[src*="158311402677731328"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
+.contents-2mQqc9>img[src*="284122164582416385"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
+.contents-2mQqc9>img[src*="107965218868457472"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Donator"
+}
+
 .contents-2mQqc9>img[src*="393900343135830016"]~.header-23xsNx>.username-1A8OIy::after {
 	content: "CV Donator"
 }
@@ -4467,12 +4602,24 @@ code {
 	content: "CV Tester"
 }
 
+.contents-2mQqc9>img[src*="513423192484872223"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Tester"
+}
+
 .contents-2mQqc9>img[src*="580867069621567488"]~.header-23xsNx>.username-1A8OIy::after {
 	content: "CV Tester"
 }
 
+.contents-2mQqc9>img[src*="538745942493495298"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "CV Translator"
+}
+
 .contents-2mQqc9>img[src*="332394843743584256"]~.header-23xsNx>.username-1A8OIy::after {
-	content: "Tag Originator"
+	content: "CV Team | Tag Originator"
+}
+
+.contents-2mQqc9>img[src*="309976820109803520"]~.header-23xsNx>.username-1A8OIy::after {
+	content: "Former CV Team"
 }
 
 .mask-1l8v16 {
@@ -4918,6 +5065,11 @@ code {
 	pointer-events: none
 }
 
+.resultsBlocked-3a77lQ {
+	background-color: transparent;
+	border: none
+}
+
 .base-3dtUhz .container-3gCOGc {
 	background-color: transparent
 }
@@ -5123,6 +5275,10 @@ code {
 .container-3gCOGc .friendsTable-133bsv .friendTableAddWrapper-nHHZtK .friendTableAddDescription-19D3dl,
 .container-3gCOGc .friendsTable-133bsv .friendTableAddWrapper-nHHZtK .connectAccounts-1orH6X h3 {
 	color: rgba(255, 255, 255, 0.5)
+}
+
+.peopleColumn-29fq28 {
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .4))
 }
 
 .base-3dtUhz .gameLibrary-TTDw4Y,
@@ -6818,77 +6974,23 @@ textarea::-webkit-scrollbar {
 	margin-left: -10px
 }
 
-.menu-Sp6bN1 .statusItem-2uzPIV {
-	position: relative;
-	display: flex;
-	align-items: center
-}
-
-.menu-Sp6bN1 .statusItem-2uzPIV .statusIconText-3b4TkH {
-	position: absolute
-}
-
-.menu-Sp6bN1 .statusItem-2uzPIV:nth-child(4) .statusIconText-3b4TkH>div,
-.menu-Sp6bN1 .statusItem-2uzPIV:last-child .statusIconText-3b4TkH>div {
-	color: rgba(255, 255, 255, 0.7);
-	opacity: 1;
-	transition: all .15s ease-in-out
-}
-
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:first-child {
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-online {
 	background: var(--online-color)
 }
 
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:nth-child(3) {
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-idle {
 	background: var(--idle-color)
 }
 
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:nth-child(4) {
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-dnd {
 	background: var(--dnd-color)
 }
 
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:nth-child(5) {
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-invisible {
 	background: var(--offline-color)
 }
 
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:nth-child(4) .statusIconText-3b4TkH>div,
-.menu-Sp6bN1 .statusItem-2uzPIV:hover:nth-child(5) .statusIconText-3b4TkH>div {
-	opacity: 0
-}
-
-.menu-Sp6bN1 .statusItem-2uzPIV:hover .status-1AY8sU {
-	background: #fff !important
-}
-
-.menu-Sp6bN1 .statusItem-2uzPIV:hover .helper-2c73HK {
-	opacity: 1
-}
-
-.menu-Sp6bN1 .status-1AY8sU {
-	transition: background .15s ease-in-out
-}
-
-.menu-Sp6bN1 .status-1AY8sU[style*="rgb(67, 181, 129)"] {
-	background: var(--online-color) !important
-}
-
-.menu-Sp6bN1 .status-1AY8sU[style*="rgb(250, 166, 26)"] {
-	background: var(--idle-color) !important
-}
-
-.menu-Sp6bN1 .status-1AY8sU[style*="rgb(240, 71, 71)"] {
-	background: var(--dnd-color) !important
-}
-
-.menu-Sp6bN1 .status-1AY8sU[style*="rgb(116, 127, 141)"] {
-	background: var(--offline-color) !important
-}
-
-.menu-Sp6bN1 .helper-2c73HK {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	color: rgba(255, 255, 255, 0.7);
-	opacity: 0;
+.colorDefault-2K3EoJ.focused-3afm-j {
 	transition: all .15s ease-in-out
 }
 
@@ -7812,6 +7914,20 @@ textarea::-webkit-scrollbar {
 
 .popout-103y-5 .footerSeparator-M9dQY1 {
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.04)
+}
+
+.container-3JTnYm {
+	background-color: rgba(0, 0, 0, 0.8)
+}
+
+.button-3htIlL:hover {
+	background-color: var(--hover-color);
+	border-color: var(--main-color) !important
+}
+
+.iconButton-285DXF:hover {
+	background-color: var(--hover-color);
+	border-color: var(--main-color) !important
 }
 
 .appMount-3lHmkl .modal-yWgWj- {
@@ -8763,6 +8879,30 @@ textarea::-webkit-scrollbar {
 	color: rgba(255, 255, 255, 0.5)
 }
 
+.discoverHeader-1TWTqG {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-color)
+}
+
+.discoverHeader-1TWTqG:after {
+	content: "";
+	height: 2px;
+	flex-grow: 1;
+	background: linear-gradient(to right, var(--main-color) 50%, transparent);
+	margin-left: 5px
+}
+
+.discoverHeader-1TWTqG:before {
+	content: "";
+	height: 2px;
+	flex-grow: 1;
+	background: linear-gradient(to left, var(--main-color) 50%, transparent);
+	margin-right: 5px
+}
+
 .container-16j22k {
 	background: rgba(0, 0, 0, 0.9)
 }
@@ -8788,6 +8928,11 @@ textarea::-webkit-scrollbar {
 
 .path3-2l9TIX {
 	opacity: .3 !important
+}
+
+.wrapper-3vR61M,
+.wrapper-1F5TKx {
+	background-color: transparent
 }
 
 .errorPage-u8SYh4 {
@@ -9732,899 +9877,6 @@ textarea::-webkit-scrollbar {
 	}
 }
 
-.hljs[class~="1c" i]:before {
-	content: "1C:Enterprise"
-}
-
-.hljs[class~="abnf" i]:before {
-	content: "ABNF"
-}
-
-.hljs[class~="accesslog" i]:before {
-	content: "Access Log"
-}
-
-.hljs[class~="actionscript" i]:before,
-.hljs[class~="as" i]:before {
-	content: "ActionScript"
-}
-
-.hljs[class~="ada" i]:before {
-	content: "Ada"
-}
-
-.hljs[class~="apache" i]:before,
-.hljs[class~="apacheconf" i]:before {
-	content: "Apache"
-}
-
-.hljs[class~="applescript" i]:before,
-.hljs[class~="osascript" i]:before {
-	content: "Applescript"
-}
-
-.hljs[class~="arduino" i]:before {
-	content: "Arduino"
-}
-
-.hljs[class~="armasm" i]:before,
-.hljs[class~="arm" i]:before {
-	content: "ARM Assembly"
-}
-
-.hljs[class~="asciidoc" i]:before,
-.hljs[class~="adoc" i]:before {
-	content: "AsciiDoc"
-}
-
-.hljs[class~="aspectj" i]:before {
-	content: "AspectJ"
-}
-
-.hljs[class~="atom" i]:before {
-	content: "Atom Feed (XML)"
-}
-
-.hljs[class~="autohotkey" i]:before {
-	content: "AutoHotkey"
-}
-
-.hljs[class~="autoit" i]:before {
-	content: "AutoIt"
-}
-
-.hljs[class~="avrasm" i]:before {
-	content: "AVR Assembler"
-}
-
-.hljs[class~="awk" i]:before {
-	content: "awk"
-}
-
-.hljs[class~="axapta" i]:before {
-	content: "Axapta"
-}
-
-.hljs[class~="bash" i]:before,
-.hljs[class~="sh" i]:before,
-.hljs[class~="zsh" i]:before {
-	content: "Bash"
-}
-
-.hljs[class~="basic" i]:before {
-	content: "Basic"
-}
-
-.hljs[class~="dos" i]:before,
-.hljs[class~="bat" i]:before,
-.hljs[class~="cmd" i]:before {
-	content: "Batch"
-}
-
-.hljs[class~="bnf" i]:before,
-.hljs[class~="bf" i]:before {
-	content: "BNF"
-}
-
-.hljs[class~="brainfuck" i]:before {
-	content: "Brainfuck"
-}
-
-.hljs[class~="c" i]:before,
-.hljs[class~="h" i]:before {
-	content: "C/C++"
-}
-
-.hljs[class~="cc" i]:before,
-.hljs[class~="cpp" i]:before,
-.hljs[class~="hpp" i]:before {
-	content: "C++"
-}
-
-.hljs[class~="cs" i]:before,
-.hljs[class~="csharp" i]:before {
-	content: "C#"
-}
-
-.hljs[class~="cal" i]:before {
-	content: "C/AL"
-}
-
-.hljs[class~="capnproto" i]:before,
-.hljs[class~="capnp" i]:before {
-	content: "Cap'n Proto"
-}
-
-.hljs[class~="ceylon" i]:before {
-	content: "Ceylon"
-}
-
-.hljs[class~="clean" i]:before,
-.hljs[class~="icl" i]:before,
-.hljs[class~="dcl" i]:before {
-	content: "Clean"
-}
-
-.hljs[class~="clojure" i]:before,
-.hljs[class~="clj" i]:before {
-	content: "Clojure"
-}
-
-.hljs[class~="clojure-repl" i]:before {
-	content: "Clojure REPL"
-}
-
-.hljs[class~="cmake" i]:before {
-	content: "CMake"
-}
-
-.hljs[class~="coffeescript" i]:before,
-.hljs[class~="coffee" i]:before,
-.hljs[class~="cson" i]:before,
-.hljs[class~="iced" i]:before {
-	content: "CoffeeScript"
-}
-
-.hljs[class~="coq" i]:before {
-	content: "Coq"
-}
-
-.hljs[class~="cos" i]:before,
-.hljs[class~="cls" i]:before {
-	content: "Caché Object Script"
-}
-
-.hljs[class~="podspec" i]:before {
-	content: "CocoaPod"
-}
-
-.hljs[class~="crmsh" i]:before,
-.hljs[class~="crm" i]:before,
-.hljs[class~="pcmk" i]:before {
-	content: "crmsh"
-}
-
-.hljs[class~="crystal" i]:before,
-.hljs[class~="cr" i]:before {
-	content: "Crystal"
-}
-
-.hljs[class~="csp" i]:before {
-	content: "CSP"
-}
-
-.hljs[class~="css" i]:before {
-	content: "CSS"
-}
-
-.hljs[class~="d" i]:before {
-	content: "D"
-}
-
-.hljs[class~="dart" i]:before {
-	content: "Dart"
-}
-
-.hljs[class~="delphi" i]:before,
-.hljs[class~="dfm" i]:before,
-.hljs[class~="dpr" i]:before {
-	content: "Delphi (Object Pascal)"
-}
-
-.hljs[class~="diff" i]:before,
-.hljs[class~="patch" i]:before {
-	content: "Diff"
-}
-
-.hljs[class~="django" i]:before {
-	content: "Django"
-}
-
-.hljs[class~="dns" i]:before,
-.hljs[class~="bind" i]:before,
-.hljs[class~="zone" i]:before {
-	content: "DNS Zone File"
-}
-
-.hljs[class~="dockerfile" i]:before,
-.hljs[class~="docker" i]:before {
-	content: "Dockerfile"
-}
-
-.hljs[class~="dsconfig" i]:before {
-	content: "dsconfig"
-}
-
-.hljs[class~="dts" i]:before {
-	content: "Device Tree"
-}
-
-.hljs[class~="dust" i]:before,
-.hljs[class~="dst" i]:before {
-	content: "Dust"
-}
-
-.hljs[class~="ebnf" i]:before {
-	content: "EBNF"
-}
-
-.hljs[class~="elixir" i]:before {
-	content: "Elixir"
-}
-
-.hljs[class~="elm" i]:before {
-	content: "Elm"
-}
-
-.hljs[class~="erb" i]:before {
-	content: "eRuby"
-}
-
-.hljs[class~="erlang" i]:before,
-.hljs[class~="erl" i]:before {
-	content: "Erlang"
-}
-
-.hljs[class~="erlang-repl" i]:before {
-	content: "Erlang REPL"
-}
-
-.hljs[class~="excel" i]:before,
-.hljs[class~="xls" i]:before,
-.hljs[class~="xlsx" i]:before {
-	content: "Excel"
-}
-
-.hljs[class~="fs" i]:before,
-.hljs[class~="fsharp" i]:before {
-	content: "F#"
-}
-
-.hljs[class~="fix" i]:before {
-	content: "Fix"
-}
-
-.hljs[class~="flix" i]:before {
-	content: "Flix"
-}
-
-.hljs[class~="fortran" i]:before,
-.hljs[class~="f90" i]:before,
-.hljs[class~="f95" i]:before {
-	content: "Fortran"
-}
-
-.hljs[class~="gams" i]:before,
-.hljs[class~="gms" i]:before {
-	content: "GAMS"
-}
-
-.hljs[class~="gauss" i]:before,
-.hljs[class~="gss" i]:before {
-	content: "GAUSS"
-}
-
-.hljs[class~="gcode" i]:before,
-.hljs[class~="nc" i]:before {
-	content: "G-code"
-}
-
-.hljs[class~="gherkin" i]:before,
-.hljs[class~="feature" i]:before {
-	content: "Gherkin"
-}
-
-.hljs[class~="glsl" i]:before {
-	content: "GLSL"
-}
-
-.hljs[class~="go" i]:before,
-.hljs[class~="golang" i]:before {
-	content: "Go"
-}
-
-.hljs[class~="golo" i]:before {
-	content: "Golo"
-}
-
-.hljs[class~="gradle" i]:before {
-	content: "Gradle"
-}
-
-.hljs[class~="groovy" i]:before {
-	content: "Groovy"
-}
-
-.hljs[class~="haml" i]:before {
-	content: "Haml"
-}
-
-.hljs[class~="handlebars" i]:before,
-.hljs[class~="hbs" i]:before {
-	content: "Handlebars"
-}
-
-.hljs[class~="haskell" i]:before,
-.hljs[class~="hs" i]:before {
-	content: "Haskell"
-}
-
-.hljs[class~="haxe" i]:before,
-.hljs[class~="hx" i]:before {
-	content: "Haxe"
-}
-
-.hljs[class~="hsp" i]:before {
-	content: "HSP"
-}
-
-.hljs[class~="html" i]:before {
-	content: "HTML"
-}
-
-.hljs[class~="htmlbars" i]:before {
-	content: "HTMLBars"
-}
-
-.hljs[class~="http" i]:before {
-	content: "HTTP"
-}
-
-.hljs[class~="https" i]:before {
-	content: "HTTPS"
-}
-
-.hljs[class~="hy" i]:before,
-.hljs[class~="hylang" i]:before {
-	content: "Hy"
-}
-
-.hljs[class~="inform7" i]:before,
-.hljs[class~="i7" i]:before {
-	content: "Inform7"
-}
-
-.hljs[class~="ini" i]:before {
-	content: "INI"
-}
-
-.hljs[class~="irb" i]:before {
-	content: "IRB"
-}
-
-.hljs[class~="irpf90" i]:before {
-	content: "IRPF90"
-}
-
-.hljs[class~="java" i]:before,
-.hljs[class~="jsp" i]:before {
-	content: "Java"
-}
-
-.hljs[class~="javascript" i]:before,
-.hljs[class~="js" i]:before,
-.hljs[class~="jsx" i]:before {
-	content: "JavaScript/JSX"
-}
-
-.hljs[class~="xjb" i]:before {
-	content: "JAXB (XML)"
-}
-
-.hljs[class~="jboss-cli" i]:before,
-.hljs[class~="wildfly-cli" i]:before {
-	content: "JBoss CLI"
-}
-
-.hljs[class~="jinja" i]:before {
-	content: "Jinja"
-}
-
-.hljs[class~="json" i]:before {
-	content: "JSON"
-}
-
-.hljs[class~="julia" i]:before {
-	content: "Julia"
-}
-
-.hljs[class~="julia-repl" i]:before {
-	content: "Julia REPL"
-}
-
-.hljs[class~="kotlin" i]:before {
-	content: "Kotlin"
-}
-
-.hljs[class~="lasso" i]:before,
-.hljs[class~="lassoscript" i]:before,
-.hljs[class~="ls" i]:before {
-	content: "Lasso"
-}
-
-.hljs[class~="ldif" i]:before {
-	content: "LDIF"
-}
-
-.hljs[class~="leaf" i]:before {
-	content: "Leaf"
-}
-
-.hljs[class~="less" i]:before {
-	content: "Less"
-}
-
-.hljs[class~="lisp" i]:before {
-	content: "Lisp"
-}
-
-.hljs[class~="livecodeserver" i]:before {
-	content: "LiveCode Server"
-}
-
-.hljs[class~="livescript" i]:before,
-.hljs[class~="ls" i]:before {
-	content: "LiveScript"
-}
-
-.hljs[class~="llvm" i]:before {
-	content: "LLVM IR"
-}
-
-.hljs[class~="lsl" i]:before {
-	content: "LSL"
-}
-
-.hljs[class~="lua" i]:before {
-	content: "Lua"
-}
-
-.hljs[class~="makefile" i]:before,
-.hljs[class~="mk" i]:before,
-.hljs[class~="mak" i]:before {
-	content: "Makefile"
-}
-
-.hljs[class~="markdown" i]:before,
-.hljs[class~="md" i]:before,
-.hljs[class~="mkd" i]:before,
-.hljs[class~="mkdown" i]:before {
-	content: "Markdown"
-}
-
-.hljs[class~="mathematica" i]:before,
-.hljs[class~="mma" i]:before {
-	content: "Mathematica"
-}
-
-.hljs[class~="matlab" i]:before {
-	content: "MatLab"
-}
-
-.hljs[class~="maxima" i]:before {
-	content: "Maxima"
-}
-
-.hljs[class~="mel" i]:before {
-	content: "MEL"
-}
-
-.hljs[class~="mercury" i]:before,
-.hljs[class~="m" i]:before,
-.hljs[class~="moo" i]:before {
-	content: "Mercury"
-}
-
-.hljs[class~="mipsasm" i]:before,
-.hljs[class~="mips" i]:before {
-	content: "MIPS Assembly"
-}
-
-.hljs[class~="routeros" i]:before,
-.hljs[class~="mikrotik" i]:before {
-	content: "Mikrotik RouterOS"
-}
-
-.hljs[class~="mizar" i]:before {
-	content: "Mizar"
-}
-
-.hljs[class~="mojolicious" i]:before {
-	content: "Mojolicious"
-}
-
-.hljs[class~="monkey" i]:before {
-	content: "Monkey"
-}
-
-.hljs[class~="moonscript" i]:before,
-.hljs[class~="moon" i]:before {
-	content: "MoonScript"
-}
-
-.hljs[class~="n1ql" i]:before {
-	content: "N1QL"
-}
-
-.hljs[class~="nginx" i]:before,
-.hljs[class~="nginxconf" i]:before {
-	content: "Nginx"
-}
-
-.hljs[class~="nimrod" i]:before,
-.hljs[class~="nim" i]:before {
-	content: "Nimrod"
-}
-
-.hljs[class~="nix" i]:before,
-.hljs[class~="nixos" i]:before {
-	content: "Nix"
-}
-
-.hljs[class~="nsis" i]:before {
-	content: "NSIS"
-}
-
-.hljs[class~="objectivec" i]:before,
-.hljs[class~="objc" i]:before,
-.hljs[class~="obj-c" i]:before,
-.hljs[class~="mm" i]:before {
-	content: "Objective-C"
-}
-
-.hljs[class~="ocaml" i]:before,
-.hljs[class~="ml" i]:before {
-	content: "OCaml"
-}
-
-.hljs[class~="openscad" i]:before,
-.hljs[class~="scad" i]:before {
-	content: "OpenSCAD"
-}
-
-.hljs[class~="ruleslanguage" i]:before {
-	content: "Oracle Rules Language"
-}
-
-.hljs[class~="oxygene" i]:before {
-	content: "Oxygene"
-}
-
-.hljs[class~="parser3" i]:before {
-	content: "Parser3"
-}
-
-.hljs[class~="pascal" i]:before,
-.hljs[class~="pas" i]:before,
-.hljs[class~="freepascal" i]:before,
-.hljs[class~="lazarus" i]:before,
-.hljs[class~="lfm" i]:before,
-.hljs[class~="lpr" i]:before {
-	content: "Pascal/Object Pascal"
-}
-
-.hljs[class~="perl" i]:before,
-.hljs[class~="pl" i]:before,
-.hljs[class~="pm" i]:before {
-	content: "Perl"
-}
-
-.hljs[class~="pf" i]:before {
-	content: "OpenBSD PF"
-}
-
-.hljs[class~="php" i]:before,
-.hljs[class~="php3" i]:before,
-.hljs[class~="php4" i]:before,
-.hljs[class~="php5" i]:before,
-.hljs[class~="php6" i]:before {
-	content: "PHP"
-}
-
-.hljs[class~="pony" i]:before {
-	content: "Pony"
-}
-
-.hljs[class~="powershell" i]:before,
-.hljs[class~="ps" i]:before {
-	content: "PowerShell"
-}
-
-.hljs[class~="processing" i]:before {
-	content: "Processing"
-}
-
-.hljs[class~="prolog" i]:before {
-	content: "Prolog"
-}
-
-.hljs[class~="plist" i]:before {
-	content: "Property List"
-}
-
-.hljs[class~="protobuf" i]:before {
-	content: "Protocol Buffers"
-}
-
-.hljs[class~="puppet" i]:before,
-.hljs[class~="pp" i]:before {
-	content: "Puppet"
-}
-
-.hljs[class~="purebasic" i]:before,
-.hljs[class~="pb" i]:before,
-.hljs[class~="pbi" i]:before {
-	content: "PureBASIC"
-}
-
-.hljs[class~="python" i]:before,
-.hljs[class~="py" i]:before,
-.hljs[class~="gyp" i]:before {
-	content: "Python"
-}
-
-.hljs[class~="profile" i]:before {
-	content: "Python profile"
-}
-
-.hljs[class~="q" i]:before,
-.hljs[class~="k" i]:before,
-.hljs[class~="kdb" i]:before {
-	content: "Q"
-}
-
-.hljs[class~="qml" i]:before,
-.hljs[class~="qt" i]:before {
-	content: "QML"
-}
-
-.hljs[class~="r" i]:before {
-	content: "R"
-}
-
-.hljs[class~="rib" i]:before {
-	content: "RenderMan RIB"
-}
-
-.hljs[class~="rsl" i]:before {
-	content: "RenderMan RSL"
-}
-
-.hljs[class~="roboconf" i]:before,
-.hljs[class~="graph" i]:before,
-.hljs[class~="instances" i]:before {
-	content: "Roboconf"
-}
-
-.hljs[class~="rss" i]:before {
-	content: "RSS Feed (XML)"
-}
-
-.hljs[class~="ruby" i]:before,
-.hljs[class~="rb" i]:before {
-	content: "Ruby"
-}
-
-.hljs[class~="thor" i]:before {
-	content: "Thor (Ruby)"
-}
-
-.hljs[class~="gemspec" i]:before {
-	content: "Ruby Gem"
-}
-
-.hljs[class~="rust" i]:before,
-.hljs[class~="rs" i]:before {
-	content: "Rust"
-}
-
-.hljs[class~="scala" i]:before {
-	content: "Scala"
-}
-
-.hljs[class~="scheme" i]:before {
-	content: "Scheme"
-}
-
-.hljs[class~="scilab" i]:before,
-.hljs[class~="sci" i]:before {
-	content: "Scilab"
-}
-
-.hljs[class~="scss" i]:before {
-	content: "SCSS"
-}
-
-.hljs[class~="shell" i]:before,
-.hljs[class~="console" i]:before {
-	content: "Shell"
-}
-
-.hljs[class~="smali" i]:before {
-	content: "Smali"
-}
-
-.hljs[class~="smalltalk" i]:before,
-.hljs[class~="st" i]:before {
-	content: "Smalltalk"
-}
-
-.hljs[class~="sml" i]:before,
-.hljs[class~="ml" i]:before {
-	content: "SML"
-}
-
-.hljs[class~="sqf" i]:before {
-	content: "SQF"
-}
-
-.hljs[class~="sql" i]:before {
-	content: "SQL"
-}
-
-.hljs[class~="stan" i]:before {
-	content: "Stan"
-}
-
-.hljs[class~="stata" i]:before,
-.hljs[class~="do" i]:before,
-.hljs[class~="ado" i]:before {
-	content: "Stata"
-}
-
-.hljs[class~="step21" i]:before,
-.hljs[class~="step" i]:before,
-.hljs[class~="stp" i]:before,
-.hljs[class~="p21" i]:before {
-	content: "STEP Part 21"
-}
-
-.hljs[class~="stylus" i]:before,
-.hljs[class~="styl" i]:before {
-	content: "Stylus"
-}
-
-.hljs[class~="subunit" i]:before {
-	content: "SubUnit"
-}
-
-.hljs[class~="swift" i]:before {
-	content: "Swift"
-}
-
-.hljs[class~="taggerscript" i]:before {
-	content: "Tagger Script"
-}
-
-.hljs[class~="tap" i]:before {
-	content: "TAP"
-}
-
-.hljs[class~="tcl" i]:before,
-.hljs[class~="tk" i]:before {
-	content: "Tcl"
-}
-
-.hljs[class~="tex" i]:before {
-	content: "TeX"
-}
-
-.hljs[class~="thrift" i]:before {
-	content: "Thrift"
-}
-
-.hljs[class~="toml" i]:before {
-	content: "TOML"
-}
-
-.hljs[class~="tp" i]:before {
-	content: "TP"
-}
-
-.hljs[class~="twig" i]:before,
-.hljs[class~="craftcms" i]:before {
-	content: "Twig"
-}
-
-.hljs[class~="typescript" i]:before,
-.hljs[class~="ts" i]:before {
-	content: "TypeScript"
-}
-
-.hljs[class~="vala" i]:before {
-	content: "Vala"
-}
-
-.hljs[class~="vbnet" i]:before,
-.hljs[class~="vb" i]:before {
-	content: "VB.NET"
-}
-
-.hljs[class~="vbscript" i]:before,
-.hljs[class~="vbs" i]:before {
-	content: "VBScript"
-}
-
-.hljs[class~="vbscript-html" i]:before {
-	content: "VBScript HTML"
-}
-
-.hljs[class~="verilog" i]:before,
-.hljs[class~="v" i]:before,
-.hljs[class~="sv" i]:before,
-.hljs[class~="svh" i]:before {
-	content: "Verilog"
-}
-
-.hljs[class~="vhdl" i]:before {
-	content: "VHDL"
-}
-
-.hljs[class~="vim" i]:before {
-	content: "Vim Script"
-}
-
-.hljs[class~="x86asm" i]:before {
-	content: "x86 Assembly"
-}
-
-.hljs[class~="xl" i]:before,
-.hljs[class~="tao" i]:before {
-	content: "XL"
-}
-
-.hljs[class~="xquery" i]:before,
-.hljs[class~="xq" i]:before,
-.hljs[class~="xpath" i]:before {
-	content: "XQuery"
-}
-
-.hljs[class~="yaml" i]:before,
-.hljs[class~="yml" i]:before {
-	content: "YAML"
-}
-
-.hljs[class~="xhtml" i]:before {
-	content: "XHTML"
-}
-
-.hljs[class~="xml" i]:before {
-	content: "XML"
-}
-
-.hljs[class~="xsd" i]:before {
-	content: "XML Schema"
-}
-
-.hljs[class~="xsl" i]:before {
-	content: "XSL"
-}
-
-.hljs[class~="zephir" i]:before,
-.hljs[class~="zep" i]:before {
-	content: "Zephir"
-}
-
 .theme-dark .perksModal-fSYqOq,
 .theme-dark .tierMarkerBackground-3q29am {
 	background-color: transparent
@@ -10678,12 +9930,12 @@ textarea::-webkit-scrollbar {
 	border-color: transparent
 }
 
-.privateChannelRecipientsInviteButtonIcon-cXLJ7f {
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {
 	color: var(--main-color) !important;
 	transition: all .1s ease-in-out
 }
 
-.privateChannelRecipientsInviteButtonIcon-cXLJ7f:hover {
+.privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {
 	color: var(--hover-color) !important;
 	transition: all .1s ease-in-out
 }
@@ -11449,7 +10701,7 @@ textarea::-webkit-scrollbar {
 	color: var(--main-color)
 }
 
-.premiumRetentionNotice-2F9O9e {
+.premiumRetentionNotice-1MsjHe {
 	background-color: var(--background-overlay)
 }
 
@@ -11506,11 +10758,6 @@ textarea::-webkit-scrollbar {
 
 .accountBtn-2Nozo3 .accountBtnInner-sj5jLs {
 	background-color: var(--background-overlay)
-}
-
-.button-14-BFJ:nth-child(3):hover>.contents-18-Yxp {
-	-webkit-animation: cv-spin 2.5s linear infinite;
-	animation: cv-spin 2.5s linear infinite
 }
 
 .theme-dark .container-3ayLPN {
@@ -11621,7 +10868,7 @@ textarea::-webkit-scrollbar {
 }
 
 .attachButton-2WznTc {
-	padding: 10px 10px
+	padding: 10px 10px 10px 28px !important
 }
 
 .placeholder-37qJjk,
@@ -12013,6 +11260,146 @@ textarea::-webkit-scrollbar {
 	background-color: var(--backdrop-overlay)
 }
 
+.container-3baos1 .button-14-BFJ[aria-label="Brugerindstillinger"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Benutzereinstellungen"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="User Settings"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Ajustes de usuario"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Paramètres utilisateur"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Korisničke postavke"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Impostazioni utente"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Naudotojo Nustatymai"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Felhasználói beállítások"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Gebruikersinstellingen"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Brukerinnstillinger"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Ustawienia użytkownika"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Configurações de Usuário"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Setări utilizator"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Käyttäjäasetukset"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Användarinställningar"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Cài đặt người dùng"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Kullanıcı Ayarları"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Uživatelská nastavení"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Ρυθμίσεις χρήστη"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Потребителски настройки"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Настройки пользователя"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="Користувацькі налаштування"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="ตั้งค่าผู้ใช้"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="用户设置"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="ユーザー設定"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="使用者設定"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
+.container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover>.contents-18-Yxp>svg {
+	-webkit-animation: cv-spin 2.5s linear infinite;
+	animation: cv-spin 2.5s linear infinite
+}
+
 .submenu-2-ysNh {
 	background-color: var(--background-overlay)
 }
@@ -12311,6 +11698,10 @@ textarea::-webkit-scrollbar {
 	background-color: var(--hover-color) !important
 }
 
+.barSecondary-3B1aP2 {
+	background-color: var(--main-color)
+}
+
 .imageWrapper-2p5ogY:focus {
 	outline-color: var(--main-color)
 }
@@ -12337,6 +11728,146 @@ textarea::-webkit-scrollbar {
 
 .container-ZRw2kD .loadingBackground-1p5N1j .loading-1lSwpg {
 	background: var(--main-color)
+}
+
+.scroller-1JpcIc {
+	background-color: transparent
+}
+
+.footer-1lnhms {
+	background-color: var(--background-overlay)
+}
+
+.content-RXzE-X a {
+	color: var(--url-color)
+}
+
+.closeButton-3sommQ {
+	width: 24px;
+	height: 24px;
+	right: 13px
+}
+
+.featureCard-1RR4Tl,
+.featureIcon-3p1TC_ {
+	background-color: var(--background-overlay)
+}
+
+.guildDetails-2p1NmK {
+	background-color: transparent
+}
+
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+	background-color: var(--hover-color)
+}
+
+.card-3RzMcx,
+.emptyChannelIcon-cc932w {
+	background-color: var(--background-overlay)
+}
+
+.notEnoughMembersError-1KwJkE {
+	background-color: var(--background-help-warning)
+}
+
+.upsellContent-1JlpHe,
+.upsellFooter-ZYsio_,
+.upsellContainer-L9xv7w {
+	background-color: transparent
+}
+
+.exampleModal-2X2Vf8,
+.optionContainer-1FtykV {
+	background-color: var(--background-overlay)
+}
+
+.theme-dark .card-3_CqkU,
+.theme-dark .iconMask-30Tvqs,
+.perkArt-1SGWbA {
+	background-color: var(--background-overlay)
+}
+
+.header-2Y0-A-,
+.analyticsCard-qckucw,
+.enableContainer-6E-puu,
+.checklistItem-37OOck,
+.previewContainer-1SS3uO,
+.exampleContainer-25sB-A {
+	background-color: var(--backdrop-overlay)
+}
+
+.iconWrapper-lS1uig {
+	background-color: var(--background-overlay)
+}
+
+.developerPortalCtaWrapper-2XNafh {
+	background-color: transparent
+}
+
+.button-2OOM0p {
+	color: var(--url-color)
+}
+
+.scrollbarDefault-3COgCQ {
+	background-color: var(--background-overlay) !important;
+	border-radius: 4px !important
+}
+
+.editCircle-ityklj {
+	background-color: var(--main-color);
+	color: white
+}
+
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+	background-color: var(--hover-color)
+}
+
+.badge-_BgAUQ {
+	background-color: var(--main-color)
+}
+
+.mediaBarProgress-1xaPtl:before,
+.mediaBarProgress-1xaPtl:after {
+	background-color: inherit
+}
+
+.members-1998pB>div {
+	background-color: transparent
+}
+
+.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2) {
+	justify-content: left
+}
+
+.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2)+.listItem-2P_4kh {
+	margin-left: 0px
+}
+
+.card-3Qj_Yx a {
+	color: var(--main-color)
+}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+	color: var(--main-color);
+	border-color: var(--main-color)
+}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover {
+	color: var(--hover-color);
+	border-color: var(--hover-color)
+}
+
+.message-39hdqk {
+	width: 110%
+}
+
+.close-jnIfru:hover {
+	color: var(--danger-color)
+}
+
+.title-2Dc-Cb {
+	color: var(--main-color)
 }
 
 .standardSidebarView-3F1I7i>.contentRegion-3nDuYy {
