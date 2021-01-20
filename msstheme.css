@@ -14,7 +14,7 @@
     --hover-color: #344230;
     --success-color: #43b581;
     --danger-color: #982929;
-    --channel-unread: var(--main-color);
+    --channel-unread: rgba(255, 75, 75);
     --channel-color: rgba(255, 255, 255, 0.3);
     --muted-color: rgba(255, 255, 255, 0.1);
     --url-color: var(--main-color);
@@ -30,7 +30,7 @@
     --members-width: 240px;
     --avatar-roundness: 50%;
     --background-shading: 100%;
-    --background-overlay: rgba(0, 0, 0, .6);
+    --background-overlay: rgba(0, 0, 0, .7);
     --background-image: url(https://i.imgur.com/XlBe3pI.jpg);
     --background-position: center;
     --background-size: cover;
@@ -290,7 +290,7 @@ textarea,
     text-shadow: 0 0 3px #000;
 }
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after {
-    content: "v6.0.3";
+    content: "v1.0.3";
     color: rgba(255, 255, 255, 0.3);
     font-family: var(--code-font);
     font-size: 10px;
